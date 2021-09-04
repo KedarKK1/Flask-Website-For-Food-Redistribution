@@ -1,0 +1,47 @@
+{% extends "base.html" %} {% block title %}register{% endblock %} {% block
+content %}
+<form action = "/registered" method="POST"><div align="center">
+<img src="{{ url_for('static',filename='finalimage3.jpg') }}" width: 1200px height: 700px></div>
+  <h1 align="center"><u>Register as NGO/individual</u></h1>
+  <div class="myborders" style="background-color:rgb(171,219,227);">
+  <div class="form-group"  align="center">
+<h3><u>For receiving food as a NGOs/individual, please fill in information</u></h3>
+ <div align="center">
+  <img src="{{ url_for('static',filename='finalimage8.png') }}" width: 100% height: 100%></div>
+<div>
+    <label for="oneName">Name of NGO/individual*</label>
+    <input
+      type="text"
+      class="form-control col-md-5"
+      id="oneName"
+      name="oneName"
+      placeholder="Enter name of NGO/individual"
+    />
+  </div>
+  <div class="form-group">
+    <label for="mobno">Mobile No.*</label>
+    <input
+      type="number"
+      class="form-control col-md-5"
+      id="mobno"
+      name="mobno"
+      placeholder="Enter mobile number"
+    />
+  </div>
+  <div class="form-group">
+    <label for="addngo">Address of NGO*</label>
+    <input
+      type="text"
+      class="form-control col-md-5"
+      id="addngo"
+      name="addngo"
+      placeholder="Address of NGO/individual"
+    />
+  </div>
+  <h7>We will contact you after your registration for more details, 
+and whenever wi'll have available food near you, we'll inform you on registered mobile number</h7>
+  </div>
+<div align="center">
+    <button type="submit" class="btn btn-primary">Submit</button></div><br>
+</form></div>
+{% endblock %}

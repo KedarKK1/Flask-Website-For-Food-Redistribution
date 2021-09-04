@@ -1,0 +1,53 @@
+{% extends "base.html" %} {% block title %}Sign Up{% endblock %} {% block
+content %}
+<form method="POST"><div align="center">
+<img class="d-block w-50" src="{{ url_for('static',filename='finalimage3.jpg') }}" width: 1200px height: 700px></div><br>
+<div style="background-color:lightblue;" class="myborders text-center">
+<h3><b><u>Sign Up</b></u></h3>
+  <div align="center" class="col align-self-center">
+  <div class="form-group col-md-5">
+    <label for="email">Email Address</label>
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      name="email"
+      placeholder="Enter email"
+    />
+  </div>
+  <div align="center" class="form-group col-md-5">
+    <label for="firstName">Full Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="firstName"
+      name="firstName"
+      placeholder="Enter Full name"
+    />
+  </div>
+  <div align="center" class="form-group col-md-5">
+    <label for="password1">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="password1"
+      name="password1"
+      placeholder="Enter password"
+    />
+  </div>
+  <div align="center" class="form-group col-md-5">
+    <label for="password2">Password (Confirm)</label>
+    <input
+      type="password"
+      class="form-control"
+      id="password2"
+      name="password2"
+      placeholder="Confirm password"
+    /><br>
+  </div>
+  </div>
+  <br /><div align="center">
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <a href="/login" class="btn btn-primary">Go back to login page</a></div>
+ </form>
+{% endblock %}

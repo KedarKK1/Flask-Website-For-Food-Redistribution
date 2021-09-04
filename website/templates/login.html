@@ -1,0 +1,180 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %} {% block content
+%}
+<form method="POST"><div align="center">
+  <!-- carosel here -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="{{ url_for('static',filename='finalimage2.jpeg') }}" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="{{ url_for('static',filename='finalimage162.jpg') }}" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="{{ url_for('static',filename='finalimage17.png') }}" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <br>
+
+  <!-- Website opening initials -->
+  <div class="myborders" style="background-color:#FF4500 ;padding:12px 12px"><marquee width="100%" direction="left">
+    Today's Updates: We did not received any information for any donations available for today yet. Stay Connected.
+    </marquee></div><br>
+  <div class="myborders" align="center" style="background-color:#ffd700"><br>
+  <h6 align="center"><ul>Welcome to our website "No food waste,Feed the Needy".</ul><br>
+  <h6 align="center"class="col align-self-center"><ul>Here we help you connect with NGOs and other needy parts to share your excess food.</ul>
+  <align="center" class="col align-self-center"><ul> <p>We take Name Of Hotel, email, address, Quantity of Leftover Food and Feedback.
+Process that Data and Provide to Nearest NGO by our Tracking System. Then NGO will provide That Food to Needy Ones. 
+Our site Is absolutely Free and if anyone Wishes to Donate then By Using support link they can Donate. <br>
+<br><p>Hotels and individuals with excess food can log in and share there details and we'll connect 
+  them with NGOs and other needy sections of our society. Then they'll pickup the food from 'annadata' to avoid 
+  food waste and feed the needy.<br><br><ul>Please sign up and be a part of this noble initiative.</ul></h6></div>
+  <hr>
+
+  <!-- Login Form -->
+  <div style="background-color:#D8BFD8; border-radius:20px"><br><h3 ><u><b>Login</b></u></h3>
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input 
+      type="email"
+      class="form-control col-md-5"
+      id="email"
+      name="email"
+      placeholder="Enter email"
+    />
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input
+      type="password"
+      class="form-control col-md-5"
+      id="password"
+      name="password"
+      placeholder="Enter password"
+    />
+    </b>
+  </div>
+  <button type="submit" class="btn btn-primary">Login</button><hr>
+  Dont Have an account ?<br>
+  <a href="sign-up">Sign Up</a><br><br>
+</div><hr>
+
+<!-- another carosel -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="{{ url_for('static',filename='finalimage2.jpeg') }}" alt="First slide">
+      <div class="carousel-caption d-none d-md-block">
+      <h5>Stop food waste, instead Feed the needy ones</h5>
+      <p>Atleast feed those who need your extra food</p></div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{ url_for('static',filename='finalimage19.jpg') }}" alt="Second slide">
+      <div class="carousel-caption d-none d-md-block">
+      <h5>Together we can make the world a better place</h5>
+      <p>so join this noble cause today</p></div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{ url_for('static',filename='finalimage20.jpg') }}" alt="Third slide">
+      <div class="carousel-caption d-none d-md-block">
+      <h5>Support US in this noble cause</h5>
+      <p>by giving us feedback or donate</p></div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div><hr>
+
+<!-- about our work -->
+<div class="myborders col-md-12 col-12 mt-3 mb-3" style="background-color: #ff8080;">
+  <h3 class=" text-center"><u>Our Innovative & Simple 4 Steps to address Food Waste & Hunger</h3></u>
+ <h5 class="color-orange text-center">We are envisioned to make the World Hunger Free and Zero Food Waste through innovative solutions and methodologies and also creating a Global Social Impact<br> </h5>
+ <h5 class="text-dark text-center"> <b>Our goal is to ensure, Feed people not landfills.</b></h5><br>
+</div>
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="{{ url_for('static',filename='email2.png') }}" alt="email">
+    <div class="card-body">
+      <h5 class="card-title">Get in touch with us</h5>
+      <p class="card-text">Donors with surplus food/resources can reach us at our website or email.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="{{ url_for('static',filename='quality.png') }}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Quality checking</h5>
+      <p class="card-text">Excess Food will be checked based on our Food Safety and Standard Guidelines</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="{{ url_for('static',filename='locate.png') }}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Locate</h5>
+      <p class="card-text">We spot the nearest “Hunger Spot” which is the most underserved areas</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="{{ url_for('static',filename='pickup.jpg') }}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Pick Up</h5>
+      <p class="card-text">Pick up your excess food. If no one is taking the food, we will distribute it to needy people with love.</p>
+    </div>
+  </div>
+</div><hr>
+
+<!-- what we want to do -->
+  <div class="row myborders" style="background-color:BlanchedAlmond;">
+    <div class="col-6 col-md-6"><h3><u><b>Our Vision</b></u></h3><img class="d-block w-50" src="{{ url_for('static',filename='finalimage12.jpg') }}">
+      <h7><p>We are envisioned to make the World Hunger Free and Zero Food Waste through innovative solutions and methodologies and also creating a Global Social Impact.</p></h7>
+      <h3><u><b>What we do?</b></u></h3>
+      We take Name Of Hotel, email, address, Quantity of Leftover Food and Feedback. Process that Data and Provide to Nearest NGO by our Tracking System. Then NGO will provide That Food to Needy Ones. Our site Is absolutely Free and if anyone Wishes to Donate then By Using support link they can Donate.</div>
+    <div class="col-6 col-md-6"><h3><u><b>Our Mission</h3></u></b><img class="d-block w-50" src="{{ url_for('static',filename='finalimage13.jpg') }}">
+    <h7><p><h7>•	Feeding needy & in-distress people by surplus food (both pre-packaged/fresh & cooked food) recovered 
+      through standard safety procedures & promote innovation in surplus food recovery & distribution
+    <br>•	To sensitize people about food waste through facilitating standardized food waste auditing methods and to provide 
+    alternative solutions for spoiled or wasted food
+    <br>•	Raise awareness amongst food businesses by encouraging them to adopt best practices to reduce food loss and food 
+    waste in their supply chain, production and distribution cycle
+    <br>•	Provide policy, regulatory, strategy and programme support for food loss and waste reduction initiatives through 
+    coordinated efforts. </h7></div>
+  </div><hr>
+    
+  <!-- Flexbox containing info about us -->
+  <div class="row myborders" style="background-color:lightgreen;">
+      <div class="col-6 col-md-4"><h3><u><b>About Us</b></u></h3><img class="d-block w-50" src="{{ url_for('static',filename='finalimage6.jpg') }}"><h7><p>We are a group of students, currently studying at SCTR's PICT,Pune.
+        Each of us are passionate about making a project that will change the world.</p>
+        Together, we wish to make a change in our world and make world a better place.</h7><br>
+        <h7>Our Valuable team members- Kedar Koshti</h7></div>
+      <div class="col-6 col-md-4"><h3><u><b>Contact Us</h3></u></b><img class="d-block w-50" src="{{ url_for('static',filename='finalimage5.png') }}" >
+      <h7><br><p>Address- SCTR's Pune Institute of Computer Technology, Dhankawadi, Pune-411043</p>
+      <p>Telephone no.- 0240-2953003</p></h7>
+      <h7>Email-<a href="mailto:nofoodwastefeedtheneedy@gmail.com">click here for mailing us</a> </h7></div>
+      <div class="col-6 col-md-4"><h3><u> <b>Support</b></h3></u><img class="d-block w-50" src="{{ url_for('static',filename='finalimage4.png') }}" width: 100% height: 100%><h7>To support us, kindly visit <a href="contact-us">"contact us"</a></div>
+    </div>
+</form>
+{% endblock %}
